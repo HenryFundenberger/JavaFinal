@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="44191dc6-d385-420b-9878-14c6eabcd03e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FinalProject.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CustomerDataInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FindCustomer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/KCElectricAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/customerDashboard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/databaseInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/displayCustomerEnergy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/displayCustomerEnergyFields.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/displayCustomerEnergySearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/findCustomerFields.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/loginBody.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/loginMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mainDashboard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/makePayment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/makePaymentBody.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/managePaymentsDash.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/newCustomer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/payCurrentBill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/removeCustomer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/singleCustomerInvoiceFields.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/titleLabel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/updateApplyCustomer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/viewInvoice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/viewPaymentStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/viewPaymentStatusFeilds.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Technical Report.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../Technical Report.docx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2NYfaQgk9Ra3snQDHZr0zXSY1Dh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/henry/OneDrive/Desktop/Java/Java Class/School Git/Java Class/Final Project/itextpdf-5.5.13.1.jar&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="FinalProject" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="44191dc6-d385-420b-9878-14c6eabcd03e" name="Changes" comment="" />
+      <created>1679846000006</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1679846000006</updated>
+      <workItem from="1679846002100" duration="7949000" />
+      <workItem from="1679936057377" duration="2807000" />
+      <workItem from="1680001266146" duration="3439000" />
+      <workItem from="1680196178624" duration="2822000" />
+      <workItem from="1680639176131" duration="1331000" />
+      <workItem from="1680728217619" duration="1913000" />
+      <workItem from="1680785679677" duration="1894000" />
+      <workItem from="1680811801659" duration="1135000" />
+      <workItem from="1680904515508" duration="3402000" />
+      <workItem from="1681138235980" duration="4287000" />
+      <workItem from="1681246221722" duration="1844000" />
+      <workItem from="1681344305536" duration="1202000" />
+      <workItem from="1681746033838" duration="2759000" />
+      <workItem from="1682182439343" duration="2115000" />
+      <workItem from="1682267726764" duration="2319000" />
+      <workItem from="1682370401934" duration="2649000" />
+      <workItem from="1682461135028" duration="863000" />
+      <workItem from="1682731769189" duration="481000" />
+      <workItem from="1682955610857" duration="1535000" />
+      <workItem from="1682987663707" duration="488000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
