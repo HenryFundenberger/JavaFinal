@@ -118,8 +118,6 @@ public class removeCustomer extends JFrame {
             // Gets database info to connect to local database
             databaseInfo db = new databaseInfo();
             String input = findCustomer.getName();
-            System.out.println(input);
-
             // Connect to the database
             try {
                 // Connect to the database

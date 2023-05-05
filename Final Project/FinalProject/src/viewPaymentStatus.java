@@ -88,7 +88,6 @@ public class viewPaymentStatus extends JFrame{
             ResultSet result = stmt.executeQuery(sql);
             // Get the meter type, kwh price, energy tarrif, last month meter, current meter, and status
             while(result.next()){
-                System.out.println("MADE IT HERE");
                 currentBill = (Double.parseDouble(result.getString("currentMeter")) - Double.parseDouble(result.getString("lastMonthMeter"))) * Double.parseDouble(result.getString("kwhPrice"));
                 currentBill += (currentBill * Double.parseDouble(result.getString("energyTarrif")));
                 // If current bill is 0, then the customer has not used any energy so skip this next part
@@ -107,8 +106,6 @@ public class viewPaymentStatus extends JFrame{
                 currBill = Double.toString(currentBill);
                 
                 }
-            System.out.println(currBill);
-            System.out.println(status);
             feilds.setLastMonthAmount(currBill);
             feilds.setStatus(status);
             
