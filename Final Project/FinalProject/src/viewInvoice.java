@@ -104,6 +104,8 @@ public class viewInvoice extends JFrame {
         autoFill();
     }
 
+    // Auto fill just sets the text fields on the page with already known information
+    // From the customer object and then calls teh DB to fill in the info with the info in the DB for the corrisponding user
     private void autoFill() {
         nameInput.setText(customer.getName());
         phoneInput.setText(customer.getPhoneNumber());
@@ -186,8 +188,10 @@ public class viewInvoice extends JFrame {
                 }
             }
 
+            // Create the KCELectricAccount object
             account = new KCElectricAccount(customer.getName(), customer.getKCElectricID(), energyTariff, meterType, kwhPrice, lastMonthMeter, currentMeter, lastPayment);
 
+            // Update the final total text field
             finalTotalInput.setText(Double.toString(subTotal));
 
 

@@ -100,6 +100,7 @@ public class payCurrentBill extends JFrame {
     }
 
 
+    // Using custoemr information connect to the db and display the current amount due
     private void setFields(){
 
         double currentBill;

@@ -97,6 +97,7 @@ public class singleCustomerInvoiceFields extends JPanel {
         c.fill = GridBagConstraints.NONE;
         // No Space vertically
 
+        // Adding all labels and text inputs
         c.weightx = 0;
         c.weighty = 0.2;
         c.gridx = 0;

@@ -29,6 +29,7 @@ public class customerDashboard extends JFrame {
 
     }
 
+    // Simple page that has three buttons one for create, update, and delete
     private void buildPanel(){
 
         title = new titleLabel("Customer Dashboard");
@@ -73,6 +74,7 @@ public class customerDashboard extends JFrame {
 
         add(buttonPanel, BorderLayout.CENTER);
 
+        // calculating max button width
         int maxWidth = 0;
 
         for (Component comp : buttonPanel.getComponents()) {
@@ -128,8 +130,5 @@ public class customerDashboard extends JFrame {
             new removeCustomer();
             dispose();
         }
-    }
-    public static void main(String[] args) {
-        new customerDashboard();
     }
 }

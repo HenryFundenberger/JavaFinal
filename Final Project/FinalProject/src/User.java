@@ -1,5 +1,6 @@
 public class User {
 
+    // User class is basic person class they are either an admin user or they are not and they have a name (primary key)
     private String name;
     private Boolean isAdmin;
 
@@ -8,6 +9,7 @@ public class User {
         this.isAdmin = isAdmin;
     }
 
+    // Getters and setters
     public String getName() {
         return name;
     }

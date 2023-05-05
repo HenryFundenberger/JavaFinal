@@ -4,7 +4,53 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44191dc6-d385-420b-9878-14c6eabcd03e" name="Changes" comment="" />
+    <list default="true" id="44191dc6-d385-420b-9878-14c6eabcd03e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../Final Project/.idea/Final Project.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final Project/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final Project/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final Project/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final Project/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final Project/FinalProject/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final Project/FinalProject/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final Project/FinalProject/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final Project/FinalProject/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final Project/FinalProject/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final Project/FinalProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Final Project/FinalProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final Project/FinalProject/FinalProject.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final Project/FinalProject/Henry FundenbergerInvoice.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Final Project/FinalProject/Henry FundenbergerInvoice.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final Project/FinalProject/src/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final Project/FinalProject/src/CustomerDataInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final Project/FinalProject/src/FindCustomer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final Project/FinalProject/src/KCElectricAccount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final Project/FinalProject/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final Project/FinalProject/src/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final Project/FinalProject/src/customerDashboard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final Project/FinalProject/src/databaseInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final Project/FinalProject/src/displayCustomerEnergy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final Project/FinalProject/src/displayCustomerEnergyFields.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final Project/FinalProject/src/displayCustomerEnergySearch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final Project/FinalProject/src/findCustomerFields.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final Project/FinalProject/src/loginBody.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final Project/FinalProject/src/loginMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final Project/FinalProject/src/mainDashboard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final Project/FinalProject/src/makePayment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final Project/FinalProject/src/makePaymentBody.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final Project/FinalProject/src/managePaymentsDash.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final Project/FinalProject/src/newCustomer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final Project/FinalProject/src/payCurrentBill.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final Project/FinalProject/src/removeCustomer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final Project/FinalProject/src/singleCustomerInvoiceFields.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final Project/FinalProject/src/titleLabel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final Project/FinalProject/src/updateApplyCustomer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final Project/FinalProject/src/viewInvoice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final Project/FinalProject/src/viewPaymentStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final Project/FinalProject/src/viewPaymentStatusFeilds.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final Project/Technical Report.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final Project/itextpdf-5.5.13.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final Project/mySQLScript.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Final Project/mysql-connector-j-8.0.31.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../README.md" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +64,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -87,6 +133,7 @@
       <workItem from="1682987663707" duration="488000" />
       <workItem from="1683240920429" duration="99000" />
       <workItem from="1683241037624" duration="6917000" />
+      <workItem from="1683306020446" duration="2462000" />
     </task>
     <servers />
   </component>

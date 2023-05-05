@@ -33,13 +33,14 @@ public class managePaymentsDash extends JFrame {
     }
 
     private void buildPanel() {
+        // adds title to top of panel
         title = new titleLabel("Manage Payments");
         add(title, BorderLayout.NORTH);
 
         // Add navigation menu
         menuBar = new JMenuBar();
         menu = new JMenu("Navigation");
-
+        // Add navigaion components
         logout = new JMenuItem("Logout");
         logout.addActionListener(new logoutListener());
         home = new JMenuItem("Home");
@@ -136,8 +137,5 @@ public class managePaymentsDash extends JFrame {
         }
     }
 
-    public static void main(String[] args) {
-        new managePaymentsDash();
-    }
 
 }

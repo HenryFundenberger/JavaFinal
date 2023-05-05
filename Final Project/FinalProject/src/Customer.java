@@ -1,5 +1,8 @@
 public class Customer extends User {
 
+    // Customer object is a specific type of user that does not sign into this application
+    // However they are the customers in the database
+    // We createa an instance of a class to locally store the databse info whenever a customer is needed.
 
     private String name;
     private int KCElectricID;
@@ -10,6 +13,7 @@ public class Customer extends User {
     private String state;
     private String zipCode;
 
+    // Initial customer constructor that takes in everything
     public Customer(String name, int KCElectricID, String phoneNumber, String address, String city, String state, String zipCode, String email) {
         super(name, false);
         this.name = name;
@@ -23,12 +27,14 @@ public class Customer extends User {
     }
 
 
+    // Customer constructor that only takes in name and kcelectric id
     public Customer (String name, int KCElectricID){
         super(name, false);
         this.name = name;
         this.KCElectricID = KCElectricID;
     }
 
+    //Getters and setters
     public void setName(String name) {
         this.name = name;
     }

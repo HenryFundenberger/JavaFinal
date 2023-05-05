@@ -85,8 +85,4 @@ public class loginMenu extends JFrame {
         }
     }
 
-    public static void main(String[] args) {
-        new loginMenu();
-
-    }
 }

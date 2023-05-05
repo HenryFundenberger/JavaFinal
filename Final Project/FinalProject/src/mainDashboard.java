@@ -67,37 +67,38 @@ public class mainDashboard extends JFrame {
 
         // Add buttons to panel
         // With a little space between them vertically
+        // Row 1
         c.gridx = 0;
         c.gridy = 0;
         c.insets = new Insets(0, 0, 10, 0);
         buttonPanel.add(manageCustomerAccounts, c);
+        // Row 2
         c.gridx = 0;
         c.gridy = 1;
         buttonPanel.add(displayCustomerEnergyUsage, c);
+        // Row 3
         c.gridx = 0;
         c.gridy = 2;
         buttonPanel.add(createCustomerInvoices, c);
+        // Row 4
         c.gridx = 0;
         c.gridy = 3;
         buttonPanel.add(managePayments, c);
 
-        // Calculate the max width of the buttons
-
+        // Get the max width of the buttons
         int maxWidth = 0;
-
-        for (Component component : buttonPanel.getComponents()) {
-            maxWidth = Math.max(component.getPreferredSize().width, maxWidth);
+        for (Component comp : buttonPanel.getComponents()) {
+            if (comp.getPreferredSize().width > maxWidth) {
+                maxWidth = comp.getPreferredSize().width;
+            }
         }
-
-        // Set the max width of the buttons
-
-        for (Component component : buttonPanel.getComponents()) {
-            Dimension d = component.getPreferredSize();
-            d.width = maxWidth;
-            component.setPreferredSize(d);
+        // Set the size of all buttons in buttonPanel to have the max width
+        for (Component comp : buttonPanel.getComponents()) {
+            comp.setPreferredSize(new Dimension(maxWidth, comp.getPreferredSize().height));
         }
 
 
+        // Adding the button panel to the main panel
         add(buttonPanel, BorderLayout.CENTER);
 
 
@@ -111,6 +112,7 @@ public class mainDashboard extends JFrame {
         }
     }
 
+    // manage customer listerner loads customer Dashboard
     private class manageCustomerAccountsListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             new customerDashboard();
@@ -118,6 +120,8 @@ public class mainDashboard extends JFrame {
         }
     }
 
+    // displayCustomerEnergyUsage Listenrer loads the find customer gui with next page passed after
+    // succesfullly finding a customer in the DB
     private class displayCustomerEnergyUsageListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             new FindCustomer("energyUsage");
@@ -125,6 +129,7 @@ public class mainDashboard extends JFrame {
         }
     }
 
+    // Create customer invoices listerner loads find customer with next page passed in
     private class createCustomerInvoicesListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             new FindCustomer("invoice");
@@ -132,6 +137,7 @@ public class mainDashboard extends JFrame {
         }
     }
 
+    // manage payments listenrer loads the payment dashboard
     private class managePaymentsListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             new managePaymentsDash();

@@ -30,6 +30,7 @@ public class viewPaymentStatus extends JFrame{
     }
 
     private void buildPanel(){
+        // adds title label to top of page
         title = new titleLabel("View Payment Status");
         add(title, BorderLayout.NORTH);
 
@@ -37,6 +38,7 @@ public class viewPaymentStatus extends JFrame{
         menuBar = new JMenuBar();
         menu = new JMenu("Navigation");
 
+        // Nav components
         logout = new JMenuItem("Logout");
         logout.addActionListener(new logoutListener());
         home = new JMenuItem("Home");
@@ -71,6 +73,7 @@ public class viewPaymentStatus extends JFrame{
         add(buttonPanel, BorderLayout.SOUTH);
     }
 
+    // Auto populates fields with customer information from the databse
     private void setFields(){
 
         double currentBill;
