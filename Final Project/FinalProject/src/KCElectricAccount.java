@@ -1,5 +1,6 @@
 public class KCElectricAccount extends Customer {
 
+    // Models DB entry for KCElectricAccount
 
     private String name;
     private int KCElectricID;
@@ -25,6 +26,7 @@ public class KCElectricAccount extends Customer {
     }
 
 
+    // Getters and Setters
     public String getName() {
         return name;
     }

@@ -28,7 +28,7 @@ public class mainDashboard extends JFrame {
 
     public mainDashboard() {
         setTitle("KC Electric Dashboard");
-        setSize(300, 300);
+        setSize(400, 300);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
 
@@ -140,8 +140,4 @@ public class mainDashboard extends JFrame {
     }
 
 
-    public static void main(String[] args) {
-        new mainDashboard();
-
-    }
 }

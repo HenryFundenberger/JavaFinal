@@ -4,43 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44191dc6-d385-420b-9878-14c6eabcd03e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FinalProject.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CustomerDataInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FindCustomer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/KCElectricAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/customerDashboard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/databaseInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/displayCustomerEnergy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/displayCustomerEnergyFields.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/displayCustomerEnergySearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/findCustomerFields.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/loginBody.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/loginMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mainDashboard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/makePayment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/makePaymentBody.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/managePaymentsDash.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/newCustomer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/payCurrentBill.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/removeCustomer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/singleCustomerInvoiceFields.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/titleLabel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/updateApplyCustomer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/viewInvoice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/viewPaymentStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/viewPaymentStatusFeilds.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Technical Report.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../Technical Report.docx" afterDir="false" />
-    </list>
+    <list default="true" id="44191dc6-d385-420b-9878-14c6eabcd03e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,7 +18,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -121,6 +85,8 @@
       <workItem from="1682731769189" duration="481000" />
       <workItem from="1682955610857" duration="1535000" />
       <workItem from="1682987663707" duration="488000" />
+      <workItem from="1683240920429" duration="99000" />
+      <workItem from="1683241037624" duration="6917000" />
     </task>
     <servers />
   </component>

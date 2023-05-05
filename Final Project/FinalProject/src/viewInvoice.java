@@ -96,7 +96,7 @@ public class viewInvoice extends JFrame {
     public viewInvoice(Customer currCustomer) {
         setTitle("KC Electric - Invoice");
         customer = currCustomer;
-        setSize(750, 475);
+        setSize(750, 500);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
         buildPanel();
@@ -587,14 +587,24 @@ public class viewInvoice extends JFrame {
 
 
     // Method to write PDF
-    private void writePDF(){
-        String FILE_NAME = customer.getName() + "Invoice.pdf";
+    private void writePDF() {
+        String folderName = "invoices";
+        String fileName = customer.getName() + " Invoice.pdf";
+        String filePath = folderName + File.separator + fileName;
 
         Document document = new Document();
 
-        try{
-            PdfWriter.getInstance(document, new FileOutputStream(new File(FILE_NAME)));
+        try {
+            // Create the invoices folder if it doesn't exist
+            File folder = new File(folderName);
+            if (!folder.exists()) {
+                folder.mkdirs();
+            }
 
+            // Export the PDF to the invoices folder
+            PdfWriter.getInstance(document, new FileOutputStream(filePath));
+
+            // Open the document
             document.open();
 
             // Create a header
@@ -710,6 +720,8 @@ public class viewInvoice extends JFrame {
 
 
             document.close();
+            // Make an message dialog saying that the PDF has been created
+            JOptionPane.showMessageDialog(null, "PDF has been created, check the invoices folder!");
         }
         catch (Exception e){
             // If this happens, display a message dialog saying to check if they have the PDF open in another program

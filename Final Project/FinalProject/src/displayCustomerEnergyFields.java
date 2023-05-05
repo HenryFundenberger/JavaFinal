@@ -53,6 +53,7 @@ public class displayCustomerEnergyFields extends JPanel {
 
     public displayCustomerEnergyFields(){
 
+        // Text Fields that will be put in displayCustomerEnergy
         lastMonthMeterInput = new JTextField(20);
         thisMonthMeterInput = new JTextField(20);
         centsPerKWHInput = new JTextField(20);
@@ -71,12 +72,15 @@ public class displayCustomerEnergyFields extends JPanel {
 
         c.weightx = 0;
         c.weighty = 0.2;
+        // Row 1
+        // Column 1
         c.gridx = 0;
         c.gridy = 0;
 
         lastMonthMeterLabel = new JLabel("Last Month Meter: ");
         add(lastMonthMeterLabel, c);
 
+        // Column 2
         c.gridx = 1;
         c.gridy = 0;
         // Make input non editable
@@ -84,73 +88,90 @@ public class displayCustomerEnergyFields extends JPanel {
         add(lastMonthMeterInput, c);
 
 
+        // Column 3
         c.gridx = 2;
         c.gridy = 0;
         thisMonthMeterLabel = new JLabel("This Month Meter: ");
         add(thisMonthMeterLabel, c);
 
+        // Column 4
         c.gridx = 3;
         c.gridy = 0;
         thisMonthMeterInput.setEditable(false);
         add(thisMonthMeterInput, c);
 
+        // Row 2
+        // Column 1
         c.gridx = 0;
         c.gridy = 1;
         centsPerKWHLabel = new JLabel("Cents per KWH: ");
         add(centsPerKWHLabel, c);
 
+        // Column 2
         c.gridx = 1;
         c.gridy = 1;
         centsPerKWHInput.setEditable(false);
         add(centsPerKWHInput, c);
 
+        // Column 3
         c.gridx = 2;
         c.gridy = 1;
         energyTarrifLabel = new JLabel("Energy Tariff: ");
         add(energyTarrifLabel, c);
 
+        // Column 4
         c.gridx = 3;
         c.gridy = 1;
         energyTarrifInput.setEditable(false);
         add(energyTarrifInput, c);
 
+        // Row 3
+        // Column 1
         c.gridx = 0;
         c.gridy = 2;
         meterTypeLabel = new JLabel("Meter Type: ");
 
         add(meterTypeLabel, c);
 
+        // Column 2
         c.gridx = 1;
         c.gridy = 2;
         meterTypeInput.setEditable(false);
         add(meterTypeInput, c);
 
+        // Column 3
         c.gridx = 2;
         c.gridy = 2;
         accountNumberLabel = new JLabel("Account #: ");
         add(accountNumberLabel, c);
 
+        // Column 4
         c.gridx = 3;
         c.gridy = 2;
         accountNumberInput.setEditable(false);
         add(accountNumberInput, c);
 
+        // Row 4
+        // Column 1
         c.gridx = 0;
         c.gridy = 3;
         lastPaymentLabel = new JLabel("Last Payment: ");
         add(lastPaymentLabel, c);
 
+        // Column 2
         c.gridx = 1;
         c.gridy = 3;
         lastPaymentInput.setEditable(false);
         add(lastPaymentInput, c);
 
+        // Column 3
         c.gridx = 2;
         c.gridy = 3;
         currentBillLabel = new JLabel("Current Bill: ");
 
         add(currentBillLabel, c);
 
+        // Column 4
         c.gridx = 3;
         c.gridy = 3;
         currentBillInput.setEditable(false);
@@ -180,8 +201,6 @@ public class displayCustomerEnergyFields extends JPanel {
     public void setAccountNumberInput(String accountNumberInput) {
         this.accountNumberInput.setText(accountNumberInput);
     }
-
-
 
     public void setCurrentBillInput(String currentBillInput) {
         this.currentBillInput.setText(currentBillInput);

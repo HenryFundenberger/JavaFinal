@@ -79,6 +79,8 @@ public class FindCustomer extends JFrame {
         submit = new JButton("Submit");
         submit.addActionListener(new submitListener());
         buttonPanel.add(submit, c);
+        // when you hit enter select the submit button
+        getRootPane().setDefaultButton(submit);
 
         c.gridx = 1;
         cancel = new JButton("Cancel");
@@ -183,13 +185,14 @@ public class FindCustomer extends JFrame {
                 new mainDashboard();
                 dispose();
             }
-            if(travelPage.equals("viewPaymentStatus")){
+            else if(travelPage.equals("viewPaymentStatus")){
                 new managePaymentsDash();
                 dispose();
             }
 
             else{
                 new mainDashboard();
+                System.out.println("Cancel button pressed");
                 dispose();
 
             }
@@ -218,9 +221,6 @@ public class FindCustomer extends JFrame {
         }
     }
 
-    public static void main(String[] args) {
-        new FindCustomer("Update");
-    }
 
 
 }

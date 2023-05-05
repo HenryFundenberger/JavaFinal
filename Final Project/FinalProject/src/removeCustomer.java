@@ -37,6 +37,7 @@ public class removeCustomer extends JFrame {
     }
 
     private void buildPanel(){
+        // Adds title to the top of the frame
         title = new titleLabel("Find Customer to Remove");
         add(title, BorderLayout.NORTH);
         findCustomer = new findCustomerFields();
@@ -46,7 +47,7 @@ public class removeCustomer extends JFrame {
         // Add navigation menu
         menuBar = new JMenuBar();
         menu = new JMenu("Navigation");
-
+        // Components for the navigation menu
         logout = new JMenuItem("Logout");
         logout.addActionListener(new logoutListener());
         home = new JMenuItem("Home");
@@ -69,6 +70,8 @@ public class removeCustomer extends JFrame {
         // Add the submit button
         submit = new JButton("Submit");
         submit.addActionListener(new submitListener());
+        // row 0
+        // column 0
         c.gridx = 0;
         c.gridy = 0;
         c.insets = new Insets(10, 10, 10, 10);
@@ -77,6 +80,8 @@ public class removeCustomer extends JFrame {
         // Add the cancel button
         cancel = new JButton("Cancel");
         cancel.addActionListener(new cancelListener());
+        // column 1
+        // row 0
         c.gridx = 1;
         c.gridy = 0;
         c.insets = new Insets(10, 10, 10, 10);
@@ -110,27 +115,31 @@ public class removeCustomer extends JFrame {
 
     private class submitListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-
+            // Gets database info to connect to local database
             databaseInfo db = new databaseInfo();
             String input = findCustomer.getName();
             System.out.println(input);
 
             // Connect to the database
             try {
+                // Connect to the database
                 Connection conn = DriverManager.getConnection(db.getDatabaseURL(), db.getUsername(), db.getPassword());
 
                 // First see if the customer exists
                 String query = "SELECT * FROM customer WHERE name = '" + input + "'";
                 ResultSet rs = conn.createStatement().executeQuery(query);
+                // making sure it's a valid entry
                 if (!rs.next()) {
                     JOptionPane.showMessageDialog(null, "Customer does not exist");
                     new customerDashboard();
                     dispose();
                 }
                 else {
+                    // if it is a valid entry, delete from the database
                     // Delete from customer table where name = input
                     query = "DELETE FROM customer WHERE name = '" + input + "'";
                     conn.createStatement().executeUpdate(query);
+                    // delete from the electric account table where name = input
                     query = "DELETE FROM electricaccount WHERE name = '" + input + "'";
                     conn.createStatement().executeUpdate(query);
                     // Display success message
@@ -139,9 +148,6 @@ public class removeCustomer extends JFrame {
                     new customerDashboard();
                     dispose();
                 }
-
-
-
 
             } catch (Exception ex) {
                 System.out.println("Error: " + ex);

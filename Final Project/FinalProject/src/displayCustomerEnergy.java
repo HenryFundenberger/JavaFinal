@@ -23,7 +23,7 @@ public class displayCustomerEnergy extends JFrame {
     public displayCustomerEnergy(Customer passedCustomer) {
         customer = passedCustomer;
         setTitle("KC Electric - Display Customer Energy Usage");
-        setSize(675, 250);
+        setSize(700, 250);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
 
@@ -34,10 +34,12 @@ public class displayCustomerEnergy extends JFrame {
     }
 
     private void buildPanel() {
+        // Set the title of the page
         title = new titleLabel(customer.getName() + " Energy Usage");
         add(title, BorderLayout.NORTH);
 
         // Menu bar
+        // And menu components
         menuBar = new JMenuBar();
         menu = new JMenu("Navigation");
         logout = new JMenuItem("Logout");
@@ -52,6 +54,7 @@ public class displayCustomerEnergy extends JFrame {
         menuBar.add(menu);
         setJMenuBar(menuBar);
 
+        // Display Customer Energy Fields in the center
         displayCustomerEnergyFields = new displayCustomerEnergyFields();
         add(displayCustomerEnergyFields, BorderLayout.CENTER);
 
@@ -71,6 +74,7 @@ public class displayCustomerEnergy extends JFrame {
 
     }
 
+    // Auto fill fields with customer data
     private void setFields () {
         databaseInfo db = new databaseInfo();
         try {
@@ -78,12 +82,14 @@ public class displayCustomerEnergy extends JFrame {
             Connection connection = DriverManager.getConnection(db.getDatabaseURL(), db.getUsername(), db.getPassword());
             // Create a Statement object.
             Statement statement = connection.createStatement();
+            // using KC electric ID get from the DB the customer's energy usage
             // Create the string for the SQL statement.
             String sqlStatement = "SELECT * FROM electricaccount where id = " + customer.getKCElectricID();
             // Send the statement to the DBMS.
             ResultSet result = statement.executeQuery(sqlStatement);
             // Process the result set.
             while (result.next()) {
+                // Getting all fields from the DB and setting them to the displayCustomerEnergyFields counterpart
                 displayCustomerEnergyFields.setLastMonthMeterInput(result.getString("lastMonthMeter"));
                 displayCustomerEnergyFields.setThisMonthMeterInput(result.getString("currentMeter"));
                 displayCustomerEnergyFields.setCentsPerKWHInput(result.getString("kwhPrice"));
@@ -96,6 +102,7 @@ public class displayCustomerEnergy extends JFrame {
                 // Then calculate the meter type and add it to the current bill
                 double currentBill = (Double.parseDouble(result.getString("currentMeter")) - Double.parseDouble(result.getString("lastMonthMeter"))) * Double.parseDouble(result.getString("kwhPrice"));
                 currentBill += (currentBill * Double.parseDouble(result.getString("energyTarrif")));
+                // If the current bill is 0, then set it to 0 in each of these cases
                 if (result.getString("meterType").equals("Residential")) {
                     currentBill += 10;
                     if (currentBill == 10){
@@ -124,31 +131,36 @@ public class displayCustomerEnergy extends JFrame {
     }
 
 
+    // Nav menu listerns
     private class homeListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            dispose();
+
             new mainDashboard();
+            dispose();
         }
     }
 
     private class logoutListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            dispose();
+
             new loginMenu();
+            dispose();
         }
     }
 
     private class mainDashboardListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            dispose();
+
             new mainDashboard();
+            dispose();
         }
     }
 
     private class searchListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
+
+            new FindCustomer("energyUsage");
             dispose();
-            new displayCustomerEnergySearch();
         }
     }
 

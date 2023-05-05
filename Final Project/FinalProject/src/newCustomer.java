@@ -26,7 +26,7 @@ public class newCustomer extends JFrame {
 
     public newCustomer() {
         setTitle("KC Electric - Create a New Customer");
-        setSize(375, 300);
+        setSize(375, 350);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
         buildPanel();
@@ -34,16 +34,21 @@ public class newCustomer extends JFrame {
     }
 
     private void buildPanel() {
+        // Adds title to the top of the frame
         title = new titleLabel("Create a New Customer");
         add(title, BorderLayout.NORTH);
+
+        // Adds the customer data input panel to the center of the frame
         newCustomerInfo = new CustomerDataInput();
 
+        // This is all the data that will be added to the database
         add(newCustomerInfo, BorderLayout.CENTER);
 
         // Add navigation menu
         menuBar = new JMenuBar();
         menu = new JMenu("Navigation");
 
+        // Components for the navigation menu
         logout = new JMenuItem("Logout");
         logout.addActionListener(new logoutListener());
         home = new JMenuItem("Home");
@@ -56,7 +61,7 @@ public class newCustomer extends JFrame {
         menuBar.add(menu);
         setJMenuBar(menuBar);
 
-
+        //https://docs.oracle.com/javase/tutorial/uiswing/layout/gridbag.html
         // Add the button panel to the south of the frame
         // Have the buttons line up horizontally
         buttonPanel = new JPanel();
@@ -66,14 +71,21 @@ public class newCustomer extends JFrame {
         // No Space vertically
         c.weightx = 0;
         c.weighty = 0.2;
+        // Setting the x and y coordinates
         c.gridx = 0;
         c.gridy = 0;
+        // Creating the buttons
         submit = new JButton("Submit");
+        // Adding the action listener
         submit.addActionListener(new submitListener());
         buttonPanel.add(submit, c);
+        // Setting the x and y coordinates
         c.gridx = 1;
+        // Creating the buttons
         cancel = new JButton("Cancel");
+        // Adding the action listener
         cancel.addActionListener(new cancelListener());
+
         buttonPanel.add(cancel, c);
         add(buttonPanel, BorderLayout.SOUTH);
 
@@ -81,7 +93,7 @@ public class newCustomer extends JFrame {
 
     private class submitListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-
+            // Initialize variables
             String name;
             String phoneNumber;
             String email;
@@ -95,10 +107,11 @@ public class newCustomer extends JFrame {
             String meterType;
             // Get current YYYY-MM-DD
             String date = new SimpleDateFormat("yyyy-MM-dd").format(new java.util.Date());
+            // Get database info
             databaseInfo db = new databaseInfo();
 
             try {
-
+                // Using customer object to get all the data
                  name = newCustomerInfo.getName();
                  phoneNumber = newCustomerInfo.getPhoneNumber();
                  email = newCustomerInfo.getEmail();
@@ -107,6 +120,11 @@ public class newCustomer extends JFrame {
                  state = newCustomerInfo.getState();
                  zip = newCustomerInfo.getZipCode();
                  energyTariff = newCustomerInfo.getEnergyTarrif();
+                 // If energy tariff is "invalid" then set it to default of 0.25 and display a message
+                    if (energyTariff.equals("invalid")) {
+                        energyTariff = "0.25";
+                        JOptionPane.showMessageDialog(null, "Energy Tariff was invalid, setting to default of 0.25");
+                    }
                 // convert energy tariff to double
                  energyTariffDouble = Double.parseDouble(energyTariff);
                  meterType = newCustomerInfo.getMeterType();

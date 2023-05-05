@@ -18,12 +18,15 @@ public class findCustomerFields extends JPanel {
 
         c.weightx = 0;
         c.weighty = 0.2;
+        // Row 1
+        // Column 1
         c.gridx = 0;
         c.gridy = 0;
 
         nameLabel = new JLabel("Name: ");
         add(nameLabel, c);
 
+        // Column 2
         c.gridx = 1;
         c.gridy = 0;
         nameInput = new JTextField(20);
@@ -31,6 +34,8 @@ public class findCustomerFields extends JPanel {
     }
 
     public String getName(){
+        // remove trailing and leading spaces
+        nameInput.setText(nameInput.getText().trim());
         return nameInput.getText();
     }
 

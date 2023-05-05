@@ -33,18 +33,20 @@ public class updateApplyCustomer extends JFrame {
     }
 
     private void buildPanel() {
+        // Adds title to the top of the frame
         title = new titleLabel("Update Customer");
         add(title, BorderLayout.NORTH);
+        // Adds the customer data input panel to the center of the frame
         updateCustomerInfo = new CustomerDataInput();
         updateCustomerInfo.setName(currCustomer.getName());
+        // Make the name field uneditable
         updateCustomerInfo.setNameEditable(false);
-
         add(updateCustomerInfo, BorderLayout.CENTER);
 
         // Add navigation menu
         menuBar = new JMenuBar();
         menu = new JMenu("Navigation");
-
+        // Navigation menu components
         logout = new JMenuItem("Logout");
         logout.addActionListener(new logoutListener());
         home = new JMenuItem("Home");
@@ -66,12 +68,15 @@ public class updateApplyCustomer extends JFrame {
         c.anchor = GridBagConstraints.CENTER;
         c.weightx = 1;
         c.weighty = 1;
+        // first row
+        // first column
         c.gridx = 0;
         c.gridy = 0;
         c.insets = new Insets(5, 5, 5, 5);
         submit = new JButton("Submit");
         submit.addActionListener(new submitListener());
         buttonPanel.add(submit, c);
+        // second column
         c.gridx = 1;
         cancel = new JButton("Cancel");
         cancel.addActionListener(new cancelListener());
@@ -80,6 +85,7 @@ public class updateApplyCustomer extends JFrame {
     }
 
     private void autoFill(){
+        // auto populates all information with the customer object passed in
         updateCustomerInfo.setName(currCustomer.getName());
         updateCustomerInfo.setAddress(currCustomer.getAddress());
         updateCustomerInfo.setCity(currCustomer.getCity());
@@ -88,6 +94,7 @@ public class updateApplyCustomer extends JFrame {
         updateCustomerInfo.setPhoneNumber(currCustomer.getPhoneNumber());
         updateCustomerInfo.setEmail(currCustomer.getEmail());
 
+        // Getting energyTarrif and meterType from the database
         String meterType;
         String energyTarrif;
         databaseInfo db = new databaseInfo();
@@ -146,15 +153,22 @@ public class updateApplyCustomer extends JFrame {
                 phone = updateCustomerInfo.getPhoneNumber();
                 zip = updateCustomerInfo.getZipCode();
                 energyTarrif = updateCustomerInfo.getEnergyTarrif();
+                // if energyTarrif is "Invalid" then set to default of "0.25"
+                if (energyTarrif.equals("Invalid")) {
+                    energyTarrif = "0.25";
+
+                }
                 meterType = updateCustomerInfo.getMeterType();
             }
             catch (Exception ex) {
-                JOptionPane.showMessageDialog(null, "Error: " + ex.getMessage());
+                // If any error occurs, display the error message and return
+                JOptionPane.showMessageDialog(null, "Please check all fields, make sure your energy tarrif is a number between 0 and 1 inclusive");
                 return;
             }
 
             // Update the database
             try {
+                // Connect to the database
                 Connection conn = DriverManager.getConnection(db.getDatabaseURL(), db.getUsername(), db.getPassword());
                 // First of all check to see if there is a user with the same name in the database
                 String query = "SELECT * FROM customer WHERE name = '" + name + "'";

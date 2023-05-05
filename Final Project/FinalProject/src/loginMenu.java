@@ -21,6 +21,10 @@ public class loginMenu extends JFrame {
         title = new titleLabel("KC Electric Login");
         loginButton = new JButton("Login");
         loginButton.addActionListener(new loginButtonListener());
+        // if the user presses enter, it will also trigger the loginButtonListener
+        // https://stackoverflow.com/questions/44525434/execute-login-button-when-enter-key-is-pressed
+        getRootPane().setDefaultButton(loginButton);
+
 
         loginButtonPanel = new JPanel();
         loginButtonPanel.add(loginButton);
@@ -67,11 +71,11 @@ public class loginMenu extends JFrame {
                 // Display the contents of the result set.
                 // The result set will have three columns.
                 if (result.next()) {
-                    System.out.println("Login successful");
                     new mainDashboard();
                     dispose();
                 } else {
-                    System.out.println("Login failed");
+                    // if the username and or password are incorrect, display an error message
+                    JOptionPane.showMessageDialog(null, "Invalid username or password");
                 }
 
             } catch (Exception er) {
